@@ -30,6 +30,7 @@ public class Employee implements UserDetails {
     private String email;
     private String password;
 
+    //cmt to check branch
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "employee")
     private Set<EmployeeHasRole> employeeHasRoleSet = new HashSet<>();
 
